@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="../stacky.css" rel="stylesheet" type="text/css" />
+<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="demo.css" rel="stylesheet" type="text/css" />
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+<script src="../stacky.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+<script>
+	$(function(){
+		//example1
+		$(".one").stacky();
+		
+		//example2
+		$(".two").stacky({
+		    showToggleButton : false
+		});
+
+		$("#btnOpen").click(function () {
+		    $(".two").trigger("openStacky");
+		});
+		$("#btnClose").click(function () {
+		    $(".two").trigger("collapseStacky");
+		});
+		$("#btnToggle").click(function () {
+		    $(".two").trigger("toggleStacky");
+		});	
+		
+		//example3
+		$(".three").stacky({
+			width:100
+		});
+	});
+</script>
+</head>
+<body>
+<h3>Example 1 : Basic Initialization</h3>
+
+<div class="one">
+    <div>
+         <h1>1</h1>
+
+    </div>
+    <div>
+         <h1>2</h1>
+
+    </div>
+    <div>
+         <h1>3</h1>
+
+    </div>
+    <div>
+         <h1>4</h1>
+
+        <div></div>
+    </div>
+</div>
+
+
+
+<h3>Example 2 : Custom Show/Hide Events</h3>
+<button id="btnOpen" class="btn btn-primary">Open</button>
+<button id="btnClose" class="btn btn-primary">Collapse</button>
+<button id="btnToggle" class="btn btn-primary">Toggle</button>
+<p></p>
+<div class="two">
+    <div>
+         <h1>1</h1>
+
+    </div>
+    <div>
+         <h1>2</h1>
+
+    </div>
+    <div>
+         <h1>3</h1>
+
+    </div>
+    <div>
+         <h1>4</h1>
+
+        <div></div>
+    </div>
+</div>
+
+<h3>Example 3 : Custom width</h3>
+<div class="three">
+    <div>
+         <h1>1</h1>
+
+    </div>
+    <div>
+         <h1>2</h1>
+
+    </div>
+    <div>
+         <h1>3</h1>
+
+    </div>
+    <div>
+         <h1>4</h1>
+
+        <div></div>
+    </div>
+</div>
+
+</body>
+</html>

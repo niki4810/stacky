@@ -1,0 +1,64 @@
+.stacky {
+    position:relative;
+    margin:5px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.stacky-child {
+    position:relative;
+    border:1px solid #d8d8d8;
+    width:100%;
+    height:100px;
+    background-color:#fff;
+    -webkit-transition: margin 0.3s ease-in;
+    -moz-transition: margin 0.3s ease-in;
+    -o-transition: margin 0.3s ease-in;
+    transition: margin 0.3s ease-in;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.stacky.stacky-collapsed .stacky-child {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.stacky-child:nth-child(1) {
+    z-index : 3;
+}
+.stacky-child:nth-child(2) {
+    z-index : 2;
+}
+.stacky-child:nth-child(n+3) {
+    z-index : 1;
+}
+.stacky-collapsed .stacky-child:nth-child(2) {
+    /*     margin-top: -98px;
+    margin-left: 3px; */
+    margin-top: -100px;
+    margin-left: 2px;
+    padding-bottom: 2px;
+}
+.stacky-collapsed .stacky-child:nth-child(n+3) {
+    /*     margin-top: -100px;
+    margin-left: 6px; */
+    margin-top: -101px;
+    margin-left: 4px;
+    padding-bottom: 3px;
+}
+.stacky-collapsed .stacky-child:nth-child(n+4) {
+    display:none;
+}
+/*stacky toggle btn css*/
+ .stacky-toggle-btn {
+    position:absolute;
+    cursor:pointer;
+    right:0;
+    bottom:0;
+    content:"";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 12px 12px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.5) transparent;
+}
