@@ -91,3 +91,8 @@ As mentioned above, stack provides a default toggle button. However if you wish 
 			    $(".two").trigger("toggleStacky"); //toggles the state of a stack
 	});
 ```
+
+
+## License
+
+Stacky is licensed under MIT
