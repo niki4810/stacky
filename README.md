@@ -15,17 +15,14 @@ To set up a basic stacky :
 * include the dependent libraries and css files
 
 ```html
-
 	<link href="stacky.css" rel="stylesheet" type="text/css" />
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="stacky.js"></script>
-
 ```
 
 * create a basic html template as shown below
 
 ```html
-
 	<div class="three">
 	    <div>
 			<!-- some content -->
@@ -39,16 +36,13 @@ To set up a basic stacky :
 	    <div>
 		    <!-- some content -->  
 	    </div>
-	</div>
-	
+	</div>	
 ```
 
 * call the stacky function over the container
 
 ```javascript
-
-	$(".three").stacky();
-	
+	$(".three").stacky();	
 ```
 
 
@@ -59,11 +53,9 @@ To set up a basic stacky :
 By default the stacky stretches to the full width of its parent container, however if you want to set a static width, you can pass it along as an option as shown below. 
 
 ```javascript
-
 	$(".three").stacky({
 		width: 100 //set the stacky width to 100px
-	});
-	
+	});	
 ```
 
 ### Hiding the default toggle button
