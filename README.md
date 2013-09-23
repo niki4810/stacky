@@ -28,21 +28,16 @@ To set up a basic stacky :
 
 	<div class="three">
 	    <div>
-	         <h1>1</h1>
-
+			<!-- some content -->
 	    </div>
 	    <div>
-	         <h1>2</h1>
-
+			<!-- some content -->
 	    </div>
 	    <div>
-	         <h1>3</h1>
-
+			<!-- some content -->
 	    </div>
 	    <div>
-	         <h1>4</h1>
-
-	        <div></div>
+		    <!-- some content -->  
 	    </div>
 	</div>
 	
