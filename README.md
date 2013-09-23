@@ -55,3 +55,44 @@ To set up a basic stacky :
 	$(".three").stacky();
 	
 ```
+
+
+## Setting options
+
+### Setting custom width
+
+By default the stacky stretches to the full width of its parent container, however if you want to set a static width, you can pass it along as an option as shown below. 
+
+```javascript
+
+	$(".three").stacky({
+		width: 100 //set the stacky width to 100px
+	});
+	
+```
+
+### Hiding the default toggle button
+
+stacky attaches a default toggle button to the first child container. However if you wish to hide this button you can simply set the `showToggleButton` property to `false` as shown below
+
+```javascript
+	$(".two").stacky({
+			    showToggleButton : false
+	});
+```
+
+### Custom events for opening, collapsing and toggle a stacky
+
+As mentioned above, stack provides a default toggle button. However if you wish to open, collapse or toggle an external source such as a button click, you can simply trigger a `openStacky` , `collapseStacky` or `toggleStacky` events.
+
+```javascript
+	$("#btnOpen").click(function () {
+			    $(".two").trigger("openStacky"); //opens a stacky when a button is clicked
+	});
+	$("#btnClose").click(function () {
+			    $(".two").trigger("collapseStacky"); //collapses a stacky
+	});
+	$("#btnToggle").click(function () {
+			    $(".two").trigger("toggleStacky"); //toggles the state of a stack
+	});
+```
