@@ -11,10 +11,10 @@
     width:100%;
     height:100px;
     background-color:#fff;
-    -webkit-transition: margin 0.3s ease-in;
-    -moz-transition: margin 0.3s ease-in;
-    -o-transition: margin 0.3s ease-in;
-    transition: margin 0.3s ease-in;
+    -webkit-transition: margin 0.3s, display 1s ease-in;
+    -moz-transition: margin 0.3s, display 1s ease-in;
+    -o-transition: margin 0.3s, display 1s ease-in;
+    transition: margin 0.3s, display 1s ease-in;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
